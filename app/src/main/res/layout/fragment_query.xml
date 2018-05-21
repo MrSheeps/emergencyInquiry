@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/login_bg"
+       />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_toolbar" />
+    
+    <ImageView
+        android:layout_width="716px"
+        android:layout_height="570px"
+        android:layout_marginTop="326px"
+        android:background="@drawable/shape_query_bg_15"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="680px"
+        android:layout_height="626px"
+        android:layout_marginTop="297px"
+        android:background="@drawable/shape_query_bg_30"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="642px"
+        android:layout_height="689px"
+        android:layout_marginTop="274px"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/bg_query"
+        />
+
+    <TextView
+        android:id="@+id/query_group_team"
+        android:layout_width="450px"
+        android:layout_height="96px"
+        android:gravity="center"
+        android:layout_marginTop="385px"
+        android:text="（组团）团队系统查询"
+        android:layout_centerHorizontal="true"
+        android:textSize="36px"
+        android:textColor="@color/text_card"/>
+    <TextView
+        android:id="@+id/query_team"
+        android:layout_width="450px"
+        android:layout_height="96px"
+        android:gravity="center"
+        android:layout_marginTop="64px"
+        android:text="（接待）团队系统查询"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/query_group_team"
+        android:textSize="36px"
+        android:textColor="@color/text_card"/>
+
+    <TextView
+        android:id="@+id/query_contract"
+        android:layout_width="450px"
+        android:layout_height="96px"
+        android:gravity="center"
+        android:layout_marginTop="64px"
+        android:text="电子合同查询"
+        app:cornerRadius="200px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/query_team"
+        android:textSize="36px"
+        android:textColor="@color/text_card"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

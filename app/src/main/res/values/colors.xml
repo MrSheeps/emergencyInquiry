@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00ffffff</color>
+
+    <!-- 大标题颜色-->
+    <color name="text_dark_title">#313739</color>
+    <!-- TextView 文字较长的，重色和浅色 -->
+    <color name="text_dark">#333333</color>
+    <color name="text_light">#858484</color>
+    <!-- TextView 文字较短的，多以key：value形式出现的，重色和浅色-->
+    <color name="text_dark_value">#343434</color>
+    <color name="text_light_key">#919191</color>
+
+    <color name="text_card">#8C9AA8</color>
+    <color name="text_card_today">#71C009</color>
+
+    <color name="text_hint">#c6c4c4</color>
+
+    <color name="menu_selected">#FF8E06</color>
+    <color name="menu_unselected">#888888</color>
+
+
+    <!-- fbutton -->
+    <color name="fbutton_default_color">#3eadeb</color>
+    <color name="fbutton_default_shadow_color">#ff3493c8</color>
+</resources>

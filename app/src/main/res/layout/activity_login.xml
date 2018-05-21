@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    tools:context=".activity.LoginActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="48px"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/white"
+    android:text="旅游安全应急平台"
+    android:layout_marginTop="124px"/>
+    
+    <FrameLayout
+        android:id="@+id/bg"
+        android:layout_width="670px"
+        android:layout_height="684px"
+        android:background="@drawable/shape_white_bg"
+        android:layout_marginTop="240px"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_width="610px"
+        android:layout_height="684px"
+        android:background="@drawable/shape_white_bg_half"
+        android:layout_marginTop="254px"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="550px"
+        android:layout_height="120px"
+        android:gravity="center_vertical"
+        android:hint="用户名"
+        android:textColorHint="#FF8C9AA8"
+        android:textSize="32px"
+        android:paddingLeft="40px"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF8C9AA8"
+        android:background="@drawable/shape_login_edit_bg"
+        android:layout_marginTop="340px">
+
+
+    </EditText>
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="550px"
+        android:layout_height="120px"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:hint="密码"
+        android:layout_below="@+id/login_user"
+        android:textColorHint="#FF8C9AA8"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:textSize="32px"
+        android:paddingLeft="40px"
+        android:textColor="#FF8C9AA8"
+        android:background="@drawable/shape_login_edit_bg"
+        android:layout_marginTop="45px">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/login_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="忘记密码"
+        android:layout_below="@+id/login_pwd"
+        android:textSize="28px"
+        android:textColor="#FF737B91"
+        android:layout_alignRight="@+id/login_pwd"
+        android:layout_marginTop="45px">
+
+
+    </TextView>
+
+    <Button
+        android:id="@+id/login_go"
+        android:layout_width="540px"
+        android:layout_height="100px"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/bg"
+        android:paddingLeft="56px"
+        android:paddingRight="56px"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="36px"
+        android:background="@drawable/shape_login_button"
+        android:layout_marginBottom="-50px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="技术支持：上海棕榈电脑系统有限公司"
+        android:textSize="28px"
+        android:textColor="#B3FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="46px">
+
+
+    </TextView>
+</com.zhy.autolayout.AutoRelativeLayout>

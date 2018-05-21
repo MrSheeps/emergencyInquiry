@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">旅游安全应急平台</string>
+
+    <string name="menu_home">首页</string>
+    <string name="menu_query">应急查询</string>
+    <string name="menu_count">舆情监测</string>
+    <string name="menu_mine">个人中心</string>
+
+</resources>
