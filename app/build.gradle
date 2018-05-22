@@ -31,6 +31,7 @@ dependencies {
     implementation 'com.zhy:autolayout:1.4.5'
     implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
     implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
 }
 repositories {
     mavenCentral()

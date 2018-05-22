@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/black</item>
     </style>
 
+    
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="@android:windowEnterAnimation">@anim/dialog_right_in</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_right_out</item>
+    </style>
+    
 </resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/feelings_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/feelings_neutral"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/feelings_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="日本东京发生7级地震，国家旅游局展开救援工作"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/feelings_img"
+        android:textSize="14sp"
+        android:textColor="#737B91"
+        android:layout_marginLeft="2dp"
+        android:maxLines="2"
+        android:lineSpacingExtra="3dp"
+        />
+
+    <TextView
+        android:id="@+id/feelings_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor...."
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelings_title"
+        app:layout_constraintLeft_toLeftOf="@+id/feelings_title"
+        android:textSize="13sp"
+        android:textColor="#FF8C9AA8"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginTop="6dp"
+        />
+
+    <TextView
+        android:id="@+id/feelings_source"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="来源：新华网     2018-04-25"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelings_content"
+        app:layout_constraintLeft_toLeftOf="@+id/feelings_title"
+        android:textSize="12sp"
+        android:textColor="#FF8C9AA8"
+        android:layout_marginTop="9dp"
+        />
+
+    <TextView
+        android:id="@+id/feelings_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="标签：地震、灾害"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelings_source"
+        app:layout_constraintLeft_toLeftOf="@+id/feelings_title"
+        android:textSize="12sp"
+        android:textColor="#FF8C9AA8"
+        android:layout_marginTop="6dp"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#FFB7BEC5"
+        app:layout_constraintTop_toBottomOf="@id/feelings_label"
+        android:layout_marginTop="10dp"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

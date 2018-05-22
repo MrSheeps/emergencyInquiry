@@ -5,7 +5,9 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentTransaction
 import com.goldpalm.emergencyinquiry.R
 import com.goldpalm.emergencyinquiry.app.BaseActivity
+import com.goldpalm.emergencyinquiry.fragment.CountFragment
 import com.goldpalm.emergencyinquiry.fragment.HomeFragment
+import com.goldpalm.emergencyinquiry.fragment.MineFragment
 import com.goldpalm.emergencyinquiry.fragment.QueryFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,6 +26,8 @@ class MainActivity : BaseActivity() {
 
     lateinit var homeFragment: HomeFragment
     lateinit var queryFragment: QueryFragment
+    lateinit var countFragment: CountFragment
+    lateinit var mineFragment: MineFragment
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +36,8 @@ class MainActivity : BaseActivity() {
         mImmersionBar.statusBarColor(R.color.colorPrimary)
         homeFragment= HomeFragment()
         queryFragment= QueryFragment()
+        countFragment= CountFragment()
+        mineFragment= MineFragment()
         setCurrentFragment(homeFragment)
         setCrrentTab(0)
 
@@ -46,10 +52,14 @@ class MainActivity : BaseActivity() {
             setCrrentTab(1)
         }
         menu_count.setOnClickListener {
-
+            if (currenterFragment==countFragment)return@setOnClickListener
+            setCurrentFragment(countFragment)
+            setCrrentTab(2)
         }
         menu_mine.setOnClickListener {
-
+            if (currenterFragment==mineFragment)return@setOnClickListener
+            setCurrentFragment(mineFragment)
+            setCrrentTab(3)
         }
 
 
