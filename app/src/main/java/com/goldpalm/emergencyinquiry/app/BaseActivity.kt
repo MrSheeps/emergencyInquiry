@@ -10,6 +10,8 @@ import kotlinx.android.synthetic.main.layout_toolbar.*
 abstract class BaseActivity : AppCompatActivity() {
     lateinit var mImmersionBar: ImmersionBar
 
+    val TAG: String=javaClass.name
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (isImmersionBar()){

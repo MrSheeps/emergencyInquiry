@@ -11,6 +11,9 @@ import kotlinx.android.synthetic.main.layout_toolbar.*
 
 abstract class BaseFragment : Fragment(){
 
+
+    val TAG: String=javaClass.name
+
     lateinit var mImmersionBar:ImmersionBar
 
 
